@@ -1,0 +1,22 @@
+地一部分就是用 bitscore 進行篩選
+在建立好 bitscore 後 我正式版 用了兩段 的 python script cell 來進行處理 這是 actinobacteria 的情形。那我再去檢查是否 proteobactera 也是一樣的兩段處理。
+好像在 proteobacreira 上並不是只用了兩段 按照目前的訊息看來我應當用了 五段 現在就先去釐清 比較簡單的兩段的 actinobactera 在以此為基礎去明白 proteobacreira
+actinobacteria 的 script 上我需要去明白何謂 hits。應當是一開始沒有限制 hits，不過還需要後續確認這是我當前的想法
+最終版本的資料在：D:\D_陳柏豪\google_drive\2.現實\1.研究所\4.論文最終修訂與離校-2023\書面論文資料\程式指令補充\歷史指令紀錄\總體基因體分析\0216START_HMM_B50-metagenomic-analysis\ 資料夾中，所有script 中提到的資料都要去這邊找
+所以HMM 搜尋的結果是以一個 aed 胺基酸(amino acid)序列進行分析，所以一個蛋白質序列會去對 MAGs database 進行 hmm 分析，最後會得到 domtblout 分析結果檔案
+所以我很幸運拿到的檔案資料是很好進行分析的 它的名稱為此 「3300027902.a:Ga0209048_10009417_8」冒號前的就是該 MAGs 的名稱所以不錯 懂了
+covert criteria dataframe to serires：這一段的說明是【總之，這段程式碼的目的是將 DataFrame 中的某一列(Criteria_Bitscore)轉換為 Series，並確保該列的數值型別為浮點數。¹²³⁴】
+創見與 domtblout 相同元素(欄位名稱)的 dataframe 
+看到這【Extract Target nmae and store it in the dictionary】 卡了一下 需要去釐清
+步驟解釋：
+首先，它檢查 significant_hits 是否為空（即是否有有效的結果）。
+如果 significant_hits 不為空，則它將 target_name 列的值轉換為一個 Python 列表（使用 .tolist() 方法）。
+接著，它將這些值存儲在一個名為 MAGs_Hits 的字典中，其中 hmmsearch 是作為鍵，而 MAGs_Hits_name 是作為值。
+如果 significant_hits 為空，則它將 MAGs_Hits_name 設置為 None。
+總之，這段程式碼的目的是根據 significant_hits 中的結果，提取 target_name 列的值並存儲在一個字典中。
+所以在2. 使用上述的 bit score 來篩選 MAGS 的 outpout data (不含有 hits 數量(?) 的篩選)的 python cell 上最終得到的輸出是那些符合篩選標準的【MAGs的protein】
+2.1 獲取positive的target name並連結MAGsID，整理出一個類似heatmap的table，再以寬鬆hits數量進行篩選(>=8)。這邊是要得到最終個別具有8個以上的protein hits的 MAGs 
+其實看了一下我發現直接有效的方式不是從頭到尾的看完我的 script 而是直接【跳到最後看輸出的 data，這樣就能夠明確知道目的了】
+2.1.1 連結positive MAGs到 metagenomes 總資料中並進行處理成最株能給R繪製 stacket barchart 的資料格式。
+這一段可惜的點就是我沒有把 最終要給予 R的 table 給輸出在 Jupytrertnotebook 上之後要處理 不過看起來是很OK得
+proteobacreira 比較特別的是有一部分是耿嚴格 一定要有 edcA EDCb EDCb 但是再最終我們只看數量 沒有特定的基因限制 所以可以刪除
