@@ -1,0 +1,63 @@
+ecosystem,ecosystem_category,taxonomy,NumberOfMAGs
+Aquatic,Freshwater,Actinobacteria,52
+Aquatic,Freshwater,Alphaproteobacteria,17
+Aquatic,Freshwater,Chloroflexi,8
+Aquatic,Freshwater,Gammaproteobacteria,12
+Aquatic,Freshwater,Myxococcia,1
+Aquatic,Freshwater,Thermodesulfobacterota,1
+Aquatic,Freshwater,Unclassified Bacteria,15
+Aquatic,Marine,Actinobacteria,149
+Aquatic,Marine,Alphaproteobacteria,25
+Aquatic,Marine,Chloroflexi,54
+Aquatic,Marine,Gammaproteobacteria,49
+Aquatic,Marine,Myxococcia,11
+Aquatic,Marine,Unclassified Bacteria,4
+Aquatic,Non-marine Saline and Alkaline,Alphaproteobacteria,2
+Aquatic,Non-marine Saline and Alkaline,Chloroflexi,3
+Aquatic,Non-marine Saline and Alkaline,Gammaproteobacteria,7
+Aquatic,Non-marine Saline and Alkaline,Other Bacterial Phylum,1
+Aquatic,Non-marine Saline and Alkaline,Unclassified Bacteria,1
+Aquatic,Sediment,Actinobacteria,1
+Aquatic,Thermal springs,Actinobacteria,3
+Aquatic,Thermal springs,Alphaproteobacteria,1
+Aquatic,Thermal springs,Chloroflexi,21
+Aquatic,Thermal springs,Myxococcia,1
+Aquatic,Thermal springs,Unclassified Bacteria,10
+Engineered,Bioreactor,Actinobacteria,3
+Engineered,Built environment,Actinobacteria,2
+Engineered,Built environment,Gammaproteobacteria,4
+Engineered,Lab enrichment,Actinobacteria,5
+Engineered,Lab enrichment,Thermodesulfobacterota,4
+Engineered,Lab synthesis,Gammaproteobacteria,1
+Engineered,Modeled,Alphaproteobacteria,8
+Engineered,Solid waste,Actinobacteria,3
+Engineered,Solid waste,Chloroflexi,1
+Engineered,Wastewater,Actinobacteria,3
+Engineered,Wastewater,Alphaproteobacteria,1
+Engineered,Wastewater,Gammaproteobacteria,2
+Engineered,Wastewater,Myxococcia,2
+Host-associated,Annelida,Alphaproteobacteria,2
+Host-associated,Annelida,Gammaproteobacteria,1
+Host-associated,Fungi,Actinobacteria,4
+Host-associated,Fungi,Alphaproteobacteria,2
+Host-associated,Fungi,Gammaproteobacteria,1
+Host-associated,Invertebrates,Gammaproteobacteria,1
+Host-associated,Mammals,Actinobacteria,1
+Host-associated,Mammals,Gammaproteobacteria,1
+Host-associated,Microbial,Alphaproteobacteria,1
+Host-associated,Plants,Actinobacteria,2
+Host-associated,Plants,Alphaproteobacteria,4
+Host-associated,Plants,Other Bacterial Phylum,1
+Host-associated,Porifera,Actinobacteria,13
+Host-associated,Porifera,Alphaproteobacteria,1
+Host-associated,Porifera,Chloroflexi,2
+Terrestrial,Deep subsurface,Actinobacteria,1
+Terrestrial,Deep subsurface,Alphaproteobacteria,1
+Terrestrial,Deep subsurface,Gammaproteobacteria,4
+Terrestrial,Peat,Actinobacteria,1
+Terrestrial,Soil,Actinobacteria,40
+Terrestrial,Soil,Alphaproteobacteria,10
+Terrestrial,Soil,Chloroflexi,2
+Terrestrial,Soil,Gammaproteobacteria,5
+Terrestrial,Soil,Other Bacterial Phylum,1
+Terrestrial,Soil,Unclassified Bacteria,19
